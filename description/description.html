@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="description.css" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+    <script>
+        closePopup = (num1) => {
+            console.log("close");
+            const x = document.getElementById("popup");
+            x.style.visibility = "hidden";
+        }
+        openPopup = () => {
+            console.log("open");
+            const x = document.getElementById("popup");
+            x.style.visibility = "visible";
+            x.innerHTML = '<div class="closePopUp" id="close" onclick="closePopup()"></div><div class="projectTitle" > <span>tie grad and its associtaion</span></div >';
+        }
+    </script>
+</head>
+<body>
+    <div id="popup" class="popup">
+            <div class="closePopUp" id="close" onclick="closePopup()"></div>
+            <div class="projectTitle">tie grad and its associtaion</div>
+            <div class="ProjectDescritpion">Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an
+            argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey
+            to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should
+            remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A
+            working thesis functions like a seed from which your paper.</div>
+            <div class="registerButton"><span>Register</span></div>
+    </div>
+    <button onclick="openPopup(0)">show</button>
+</body>
+</html>
