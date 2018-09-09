@@ -188,6 +188,11 @@ body{
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 0.1em;
   }
 
+.clearfix{
+    content: "";
+    clear:both;
+}
+
   @keyframes scrollAnimKey{
     0%{
         opacity: 1;        
@@ -224,3 +229,165 @@ body{
     bottom: 80px;
   }
 }
+
+.event-block{
+    background-color: rgba(0,0,0,0.5);
+    opacity:1;
+    margin :10px auto 10px auto;
+    width:auto;
+    height:auto;
+    animation: bottomtotop 1s ease-out;
+    cursor: pointer;
+}
+
+
+
+@keyframes bottomtotop{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.left_box{
+    width:40%;
+    height:100%;
+    float:left;
+    padding:50px;
+    box-sizing: border-box;
+}
+
+.left_box .content{
+    color:#fff;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    transition: 0.5s;
+}
+
+.left_box .content:hover{
+    background-color:#0a9581;
+}
+
+.left_box .content h1{
+    margin:0;
+    padding: 0;
+    font-size: 40px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.left_box .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.events_box{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top:0;
+    left:40%;
+    background-color: rgba(0,0,0,0.5);
+    float:right;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.events_box ul{
+    position:absolute;
+    margin:0;
+    top:15px;
+    transform: translateY(40px);
+    padding:40px;
+    box-sizing: border-box;
+}
+
+.events_box ul li{
+    list-style:none;
+    background: #fff;
+    box-sizing: border-box;
+    height:210px;
+    top:15px;
+    margin:5px;
+}
+
+.events_box ul li .event_date{
+    position: relative;
+    padding:20px;
+    backface-visibility: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height:100%;
+    overflow: hidden;
+    float:left;
+    text-align:center;
+    transition: 0.5s;
+    background: rgba(0,0,0,0.5);
+}
+
+.events_box ul li:hover .event_date{
+    background: #0a9581;
+}
+
+.events_box ul li .event_date h2{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    font-size: 50px;
+}
+
+.events_box ul li .event_date h2 span{
+    font-size: 30px;
+}
+
+.events_box ul li .event_details{
+    padding:20px;
+    background:#fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.events_box ul li .event_details h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.events_box ul li .event_details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.events_box ul li .event_details a{
+    display: inline-block;
+    border: 2px solid #262626;
+    padding: 10px 10px;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.register{
+    float:right;
+}
+.events_box ul li .event_details a:hover {
+    color:#fff;
+    background: #0a9581;
+}
+/**{
+    border:1px solid red;
+}*/
