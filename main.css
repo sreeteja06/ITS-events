@@ -188,6 +188,11 @@ body{
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 0.1em;
   }
 
+.clearfix{
+    content: "";
+    clear:both;
+}
+
   @keyframes scrollAnimKey{
     0%{
         opacity: 1;        
@@ -224,3 +229,6 @@ body{
     bottom: 80px;
   }
 }
+
+
+
