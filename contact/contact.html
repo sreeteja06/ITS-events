@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
+    <script>
+        function addClass() {
+            let closed = document.getElementsByClassName("nav-is-visible");
+            if (closed.length <= 0) {
+                console.log("if");
+                let classn = document.getElementsByClassName("cd-stretchy-nav");
+                classn[0].classList.add("nav-is-visible");
+                closed = false;
+            }
+            else {
+                console.log("else");
+                let classn = document.getElementsByClassName("cd-stretchy-nav");
+                classn[0].classList.remove("nav-is-visible");
+                closed = !closed;
+            }
+        }
+        function check() {
+            console.log("helo");
+            const email = document.getElementById("name").Value;
+            var reg = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
+
+            if (reg.test(email.value) == false) {
+                alert('Invalid Email Address');
+            }
+            }
+    </script>
+</head>
+
+<body>
+    <nav class="cd-stretchy-nav">
+        <a class="cd-nav-trigger" onclick="addClass()">
+            <span aria-hidden="true"></span>
+        </a>
+        <ul>
+            <li><a href="../index.html"><span></span></a></li>
+        <li><a href="../calendar/calendar.html"><span></span></a></li>
+        <li><a href="../index.html"><span></span></a></li>
+        <li><a href="../About/about.html"><span></span></a></li>
+        <li><a href="contact.html" class="active"><span></span></a></li>
+        </ul>
+        <span aria-hidden="true" class="stretchy-nav-bg"></span>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h1>contact us</h1>
+        </div>
+        <div class="row">
+            <h4>We'd love to hear from you!</h4>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/m_sreeteja/" class="instagram" style="border-right: 1px solid #EEEEEE;"><img
+                    src="../About/instagram.png" height="64px" width="64px"></a>
+            <a href="https://www.linkedin.com/in/sree-teja-5121aaa6/" class="LinkedIn" style="border-right: 1px solid #EEEEEE;"><img
+                    src="../About/linkedin.png" height="64px" width="64px"></a>
+            <a href="https://twitter.com/sreeteja06" class="Twitter"><img src="../About/twitter.png" height="64px" width="64px"></a>
+        </div>
+        <form onsubmit="check()">
+            <div class="row input-container">
+                <div class="styled-input wide">
+                    <input id="name" type="text" required />
+                    <label>Name</label>
+                </div>
+                <div class="styled-input">
+                    <input id="Email" type="text" required />
+                    <label>Email</label>
+                </div>
+                <div class="styled-input" style="float:right;">
+                    <input id="Phone" type="number" required />
+                    <label>Phone Number</label>
+                </div>
+                <div class="styled-input wide">
+                    <textarea id="Message" required></textarea>
+                    <label>Message</label>
+                </div>
+                <input type="submit" class="btn-lrg submit-btn" value="Send Message">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

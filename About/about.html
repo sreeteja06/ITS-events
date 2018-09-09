@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="about.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+    <script>
+        function addClass() {
+          let closed = document.getElementsByClassName("nav-is-visible");
+          if(closed.length<=0){
+            console.log("if");
+            let classn = document.getElementsByClassName("cd-stretchy-nav");
+            classn[0].classList.add("nav-is-visible");
+            closed = false;
+          }
+          else{
+            console.log("else");
+            let classn = document.getElementsByClassName("cd-stretchy-nav");
+            classn[0].classList.remove("nav-is-visible");
+            closed = !closed;
+          }
+        }
+        function scrollToEvents() {
+            $('html, body').animate({ scrollTop: $('.newcard').offset().top }, 'slow');
+            return false;
+        }
+    </script>
+</head>
+<body>
+<nav class="cd-stretchy-nav">
+    <a class="cd-nav-trigger" onclick="addClass()">
+        <span aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="../index.html"><span></span></a></li>
+        <li><a href="../calendar/calendar.html"><span></span></a></li>
+        <li><a href="../index.html"><span></span></a></li>
+        <li><a href="about.html" class="active"><span></span></a></li>
+        <li><a href="../contact/contact.html"><span></span></a></li>
+    </ul>
+    <span aria-hidden="true" class="stretchy-nav-bg"></span>
+</nav>
+<div class="ABC">Developed and Maintained by <br/>ABC Club Members</div>
+<div class="AboutCards">
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <div class="cover">
+                    <img src="pp.png"/>
+                </div>
+                <div class="user">
+                    <img class="img-circle" src="myself.jpeg"/>
+                </div>
+                <div class="content">
+                    <div class="main">
+                        <h3 class="name">M. SREE TEJA</h3>
+                        <p class="profession">Projects Head</p>
+                        <p class="text-center">"A Programmer Just Trying To Fix A Dent In A Universe."</p>
+                    </div>
+                </div>
+            </div> <!-- end front panel -->
+            <div class="back">
+                <div class="header">
+                    <h5 class="motto">"Tank Full of Dreams"</h5>
+                </div>
+                <div class="content">
+                    <div class="main">
+                        <h4 class="text-center">Job Description</h4>
+                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Android and many others...</p>
+
+                        <div class="stats-container">
+                            <div class="stats">
+                                <h4>40%</h4>
+                                <p>
+                                    Dedication
+                                </p>
+                            </div>
+                            <div class="stats">
+                                <h4>60%</h4>
+                                <p>
+                                    Travelling
+                                </p>
+                            </div>
+                            <div class="stats">
+                                <h4>3</h4>
+                                <p>
+                                    Projects
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="social-links text-center">
+                        <a href="https://www.instagram.com/m_sreeteja/" class="instagram"><img src="instagram.png" height="20px" width="20px"></a>
+                        <a href="https://www.linkedin.com/in/sree-teja-5121aaa6/" class="LinkedIn"><img src="linkedin.png" height="20px" width="20px"></a>
+                        <a href="https://twitter.com/sreeteja06" class="Twitter"><img src="twitter.png" height="20px" width="20px"></a>
+                    </div>
+                </div>
+            </div> <!-- end back panel -->
+        </div> <!-- end card -->
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <div class="cover">
+                    <img src="pp.png"/>
+                </div>
+                <div class="user">
+                    <img class="img-circle" src="myself.jpeg"/>
+                </div>
+                <div class="content">
+                    <div class="main">
+                        <h3 class="name">Nivedh Vishnu</h3>
+                        <p class="profession">Spoke Person</p>
+                        <p class="text-center">"Just breathing to live a life."</p>
+                    </div>
+                </div>
+            </div> <!-- end front panel -->
+            <div class="back">
+                <div class="header">
+                    <h5 class="motto">"Empty goes unwanted"</h5>
+                </div>
+                <div class="content">
+                    <div class="main">
+                        <h4 class="text-center">Job Description</h4>
+                        <p class="text-center">Web design, HTML5, CSS3, Android and many others...</p>
+
+                        <div class="stats-container">
+                            <div class="stats">
+                                <h4>20%</h4>
+                                <p>
+                                    Alcohol
+                                </p>
+                            </div>
+                            <div class="stats">
+                                <h4>80%</h4>
+                                <p>
+                                    Over Action 😂
+                                </p>
+                            </div>
+                            <div class="stats">
+                                <h4>3</h4>
+                                <p>
+                                    Projects
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="social-links text-center">
+                        <a href="https://www.instagram.com/m_sreeteja/" class="instagram"><img src="instagram.png" height="20px" width="20px"></a>
+                        <a href="https://www.linkedin.com/in/sree-teja-5121aaa6/" class="LinkedIn"><img src="linkedin.png" height="20px" width="20px"></a>
+                        <a href="https://twitter.com/sreeteja06" class="Twitter"><img src="twitter.png" height="20px" width="20px"></a>
+                    </div>
+                </div>
+            </div> <!-- end back panel -->
+        </div> <!-- end card -->
+    </div>
+</div>
+</body>
+</html>

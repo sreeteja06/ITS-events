@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Plus rotation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    window.onscroll = function () {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("scrollAnim").style.visibility = "hidden";
+      } else {
+        document.getElementById("scrollAnim").style.visibility = "visible";
+      }
+    };
+    function addClass() {
+      let closed = document.getElementsByClassName("nav-is-visible");
+      if (closed.length <= 0) {
+        console.log("if");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.add("nav-is-visible");
+        closed = false;
+      }
+      else {
+        console.log("else");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.remove("nav-is-visible");
+        closed = !closed;
+      }
+    }
+    function scrollToEvents() {
+      $('html, body').animate({ scrollTop: $('.newcard').offset().top }, 'slow');
+      return false;
+    }
+    function cardClick(num) {
+      if (window.getComputedStyle(document.getElementsByClassName("intro")[num]).getPropertyValue("opacity") == 1) {
+        document.getElementsByClassName("intro")[num].style.opacity = "0";
+        document.getElementsByClassName("card-info")[num].style.opacity = "1";
+        document.getElementsByClassName("card-info")[num].style.bottom = "40%";
+        document.getElementsByClassName("color-overlay")[num].style.background = "rgba(84, 104, 110, 0.8)";
+        document.getElementsByClassName("title-content")[num].style.opacity = "0";
+      }
+      else{
+        document.getElementsByClassName("intro")[num].style.opacity = "1";
+        document.getElementsByClassName("card-info")[num].style.opacity = "0";
+        document.getElementsByClassName("card-info")[num].style.bottom = "100px";
+        document.getElementsByClassName("color-overlay")[num].style.background = "rgba(84, 104, 110, 0.4)";
+        document.getElementsByClassName("title-content")[num].style.opacity = "1";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="cd-stretchy-nav">
+    <a class="cd-nav-trigger" onclick="addClass()">
+      <span aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="index.html" class="active"><span>Home</span></a></li>
+      <li><a href="calendar/calendar.html"><span>Calendar</span></a></li>
+      <li><a onclick="scrollToEvents()"><span>Events</span></a></li>
+      <li><a href="About/about.html"><span>About</span></a></li>
+      <li><a href="contact/contact.html"><span>Contact</span></a></li>
+    </ul>
+    <span aria-hidden="true" class="stretchy-nav-bg"></span>
+  </nav>
+  <div class="its">ITS</div>
+  <div id="scrollAnim"><b>Scroll Down</b></div>
+
+  <!-- events section starts here -->
+  <div class="its subHead">Events</div>
+  <div class="newcard">
+    <div style="background-image:url(walle.jpg)" class="blog-card spring-fever" onclick="cardClick(0)">
+      <div class="title-content">
+        <h3>TIE GRAD</h3>
+        <hr />
+        <div class="intro">Seminar And Workshop</div>
+      </div><!-- /.title-content -->
+      <div class="card-info">
+        Its a seminar about entrepreneurship, There's a workshop where you will be developing bussiness ideas and
+        bussiness models.
+      </div><!-- /.card-info -->
+      <div class="utility-info">
+        <ul class="utility-list">
+          <li style="float:left">Ravi Chandra</li>
+          <li class="date">11.09.2018</li>
+        </ul>
+      </div><!-- /.utility-info -->
+      <!-- overlays -->
+      <div class="gradient-overlay"></div>
+      <div class="color-overlay"></div>
+    </div><!-- /.blog-card -->
+    <div style="background-image:url(Capture.PNG)" class="blog-card spring-fever" onclick="cardClick(1)">
+      <div class="title-content">
+        <h3>Event 2</h3>
+        <hr />
+        <div class="intro">Small Description</div>
+      </div><!-- /.title-content -->
+      <div class="card-info">
+        the total minimized description of the event
+      </div><!-- /.card-info -->
+      <div class="utility-info">
+        <ul class="utility-list">
+          <li style="float:left">Contact Name</li>
+          <li class="date">15.11.2018</li>
+        </ul>
+      </div><!-- /.utility-info -->
+      <!-- overlays -->
+      <div class="gradient-overlay"></div>
+      <div class="color-overlay"></div>
+    </div><!-- /.blog-card -->
+  </div>
+
+  <!-- events section ends here -->
+  <!-- workshop sectiono starts here -->
+
+  <div class="its subHead">Workshops</div>
+  <div class="newcard">
+    <div style="background-image:url(walle.jpg)" class="blog-card spring-fever" onclick="cardClick(0)">
+      <div class="title-content">
+        <h3>TIE GRAD</h3>
+        <hr />
+        <div class="intro">Seminar And Workshop</div>
+      </div><!-- /.title-content -->
+      <div class="card-info">
+        Its a seminar about entrepreneurship, There's a workshop where you will be developing bussiness ideas and
+        bussiness models.
+      </div><!-- /.card-info -->
+      <div class="utility-info">
+        <ul class="utility-list">
+          <li style="float:left">Ravi Chandra</li>
+          <li class="date">11.09.2018</li>
+        </ul>
+      </div><!-- /.utility-info -->
+      <!-- overlays -->
+      <div class="gradient-overlay"></div>
+      <div class="color-overlay"></div>
+    </div><!-- /.blog-card -->
+    <div style="background-image:url(Capture.PNG)" class="blog-card spring-fever" onclick="cardClick(1)">
+      <div class="title-content">
+        <h3>Event 2</h3>
+        <hr />
+        <div class="intro">Small Description</div>
+      </div><!-- /.title-content -->
+      <div class="card-info">
+        the total minimized description of the event
+      </div><!-- /.card-info -->
+      <div class="utility-info">
+        <ul class="utility-list">
+          <li style="float:left">Contact Name</li>
+          <li class="date">15.11.2018</li>
+        </ul>
+      </div><!-- /.utility-info -->
+      <!-- overlays -->
+      <div class="gradient-overlay"></div>
+      <div class="color-overlay"></div>
+    </div><!-- /.blog-card -->
+  </div>
+
+  <!-- WorkShop section Ends here -->
+
+  <div style="margin-top:1200px; height: 1000px">
+    hello
+  </div>
+</body>
+
+</html>
