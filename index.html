@@ -11,7 +11,13 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
-    window.onscroll = function () {
+    window.onscroll = () => {
+      if(!(closed.length <= 0)){
+        console.log("else");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.remove("nav-is-visible");
+        closed = !closed;
+      }
       if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         document.getElementById("scrollAnim").style.visibility = "hidden";
       } else {
@@ -65,7 +71,7 @@
       <li><a href="index.html" class="active"><span>Home</span></a></li>
       <li><a href="calendar/calendar.html"><span>Calendar</span></a></li>
       <li><a onclick="scrollToEvents()"><span>Events</span></a></li>
-      <li><a href="About/about.html"><span>About</span></a></li>
+      <li><a onclick="scrollToEvents()"><span>Workshops</span></a></li>
       <li><a href="contact/contact.html"><span>Contact</span></a></li>
     </ul>
     <span aria-hidden="true" class="stretchy-nav-bg"></span>
@@ -116,13 +122,14 @@
       <div class="color-overlay"></div>
     </div><!-- /.blog-card -->
   </div>
+  <div class="showMore">Show More</div>
 
   <!-- events section ends here -->
   <!-- workshop sectiono starts here -->
 
   <div class="its subHead">Workshops</div>
   <div class="newcard">
-    <div style="background-image:url(walle.jpg)" class="blog-card spring-fever" onclick="cardClick(0)">
+    <div style="background-image:url(walle.jpg)" class="blog-card spring-fever" onclick="cardClick(2)">
       <div class="title-content">
         <h3>TIE GRAD</h3>
         <hr />
@@ -142,9 +149,9 @@
       <div class="gradient-overlay"></div>
       <div class="color-overlay"></div>
     </div><!-- /.blog-card -->
-    <div style="background-image:url(Capture.PNG)" class="blog-card spring-fever" onclick="cardClick(1)">
+    <div style="background-image:url(Capture.PNG)" class="blog-card spring-fever" onclick="cardClick(3)">
       <div class="title-content">
-        <h3>Event 2</h3>
+        <h3>Workshop 2</h3>
         <hr />
         <div class="intro">Small Description</div>
       </div><!-- /.title-content -->
@@ -162,6 +169,7 @@
       <div class="color-overlay"></div>
     </div><!-- /.blog-card -->
   </div>
+  <div class="showMore">Show More</div>
 
   <!-- WorkShop section Ends here -->
 

@@ -41,6 +41,14 @@ body{
   margin-top: 10%;
 }
 
+.showMore{
+  position: relative;
+  float: right;
+  margin-top: 50px;
+  margin-right: 15%;
+  color: #9acd91;
+}
+
 #scrollAnim{
     visibility: visible;
     text-align: center;
