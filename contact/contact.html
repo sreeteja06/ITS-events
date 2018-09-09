@@ -24,15 +24,6 @@
                 closed = !closed;
             }
         }
-        function check() {
-            console.log("helo");
-            const email = document.getElementById("name").Value;
-            var reg = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
-
-            if (reg.test(email.value) == false) {
-                alert('Invalid Email Address');
-            }
-            }
     </script>
 </head>
 
@@ -64,22 +55,22 @@
                     src="linkedin.png" height="64px" width="64px"></a>
             <a href="https://twitter.com/sreeteja06" class="Twitter"><img src="twitter.png" height="64px" width="64px"></a>
         </div>
-        <form onsubmit="check()">
+        <form action="./sendEmail.php" method="POST">
             <div class="row input-container">
                 <div class="styled-input wide">
-                    <input id="name" type="text" required />
+                    <input id="name" name="name" type="text" required />
                     <label>Name</label>
                 </div>
                 <div class="styled-input">
-                    <input id="Email" type="text" required />
+                    <input id="Email" name="Email" type="text" required />
                     <label>Email</label>
                 </div>
                 <div class="styled-input" style="float:right;">
-                    <input id="Phone" type="number" required />
+                    <input id="Phone" name="Phone" type="number" required />
                     <label>Phone Number</label>
                 </div>
                 <div class="styled-input wide">
-                    <textarea id="Message" required></textarea>
+                    <textarea id="Message" name="Message" required></textarea>
                     <label>Message</label>
                 </div>
                 <input type="submit" class="btn-lrg submit-btn" value="Send Message">
