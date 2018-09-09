@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            function addClass() {
+                let closed = document.getElementsByClassName("nav-is-visible");
+                if (closed.length <= 0){
+                    console.log("if");
+                    let classn=document.getElementsByClassName("cd-stretchy-nav"); classn[0].classList.add("nav-is-visible"); closed=false;
+                } else {
+                    console.log("else"); 
+                    let classn=document.getElementsByClassName("cd-stretchy-nav"); classn[0].classList.remove("nav-is-visible"); 
+                    closed=!closed; 
+                } 
+            }
+        </script>
+        <style>
+            .cd-stretchy-nav a:hover {
+                color:#fff;
+                background: #0a9581;
+                border-radius: 100px;
+            }  
+        </style>
+    </head>
+    <body style="background:url('Event.jpg');background-size: cover;  background-attachment: fixed;">
+        <nav class="cd-stretchy-nav">
+            <a class="cd-nav-trigger" onclick="addClass()">
+                <span aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li><a href="index.html" class="active"><span>Home</span></a></li>
+                <li><a href="calendar/calendar.html"><span>Calendar</span></a></li>
+                <li><a onclick="scrollToEvents()"><span>Events</span></a></li>
+                <li><a onclick="scrollToEvents()"><span>Workshops</span></a></li>
+                <li><a href="contact/contact.html"><span>Contact</span></a></li>
+            </ul>
+            <span aria-hidden="true" class="stretchy-nav-bg"></span>
+        </nav>
+       <section>
+           <div class="left_box">
+               <div class="content">
+                   <h1>Events and Workshops</h1>
+                   <p>
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                   </p>
+               </div>
+           </div>
+           <div class="events_box">
+               <ul>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title">Title</h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title">Title</h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+                   <li>
+                       <div class="event_date">
+                           <h2>11<br /><span>September</span></h2>
+                       </div>
+                       <div class="event_details">
+                           <h3 class="event_title"></h3>
+                           <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                           </p>
+                           <a href="#">View Details</a>
+                           <a href="#" class="register">Register</a>
+                       </div>
+                       <div class+="clearfix"></div>
+                   </li>
+               </ul>
+           </div>
+       </section>
+    </body>
+</html>
