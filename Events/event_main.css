@@ -106,7 +106,7 @@ body{
     box-sizing: border-box;
     height:210px;
     top:15px;
-    animation: bottomtotop 1s ease-out;
+    animation: bottomtotop 0.5s ease-out;
     margin:5px;
 }
 
@@ -120,7 +120,7 @@ body{
     overflow: hidden;
     float:left;
     text-align:center;
-    transition: 0.5s;
+    transition: 0.3s;
     background: rgba(0,0,0,0.5);
 }
 
