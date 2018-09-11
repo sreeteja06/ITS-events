@@ -22,6 +22,14 @@ function addClass() {
       closed = !closed;
     }
   }
+window.onscroll = () => {
+    if (!(closed.length <= 0)) {
+        console.log("else");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.remove("nav-is-visible");
+        closed = !closed;
+    }
+};
 //function for  nav open close
 
 /*var date = new Date(),

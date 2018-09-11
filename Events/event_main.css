@@ -120,8 +120,13 @@ body{
     box-sizing: border-box;
     height:210px;
     top:15px;
+<<<<<<< HEAD
     animation: bottomtotop 1s ease-out;
     margin:10px;
+=======
+    animation: bottomtotop 0.5s ease-out;
+    margin:5px;
+>>>>>>> eb443765c5798babb5607737e6c94fb77aee6423
 }
 
 .events_box ul li .event_date{
@@ -134,7 +139,7 @@ body{
     overflow: hidden;
     float:left;
     text-align:center;
-    transition: 0.5s;
+    transition: 0.3s;
     background: rgba(0,0,0,0.5);
 }
 

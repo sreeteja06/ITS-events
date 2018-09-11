@@ -36,7 +36,7 @@ body{
 }
 
 .its.subHead{
-  font-size: 15vh;
+  font-size: 12vw;
   height: auto;
   margin-top: 10%;
 }
@@ -188,11 +188,6 @@ body{
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 0.1em;
   }
 
-.clearfix{
-    content: "";
-    clear:both;
-}
-
   @keyframes scrollAnimKey{
     0%{
         opacity: 1;        
@@ -209,6 +204,9 @@ body{
   .its{
     margin: auto;
     height: auto;
+  }
+  .its.subHead{
+    font-size: 16vw;
   }
   .newcard{
     display: inline;
