@@ -1,0 +1,69 @@
+body{
+    background-color: #252830;
+    color: #777;
+    padding: 30px;
+}
+
+.Login_box{
+    width: 320px;
+    height: 430px;
+    background: transparent;
+    background-color:rgba(0, 0,0,0.6);
+    color: white;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+.Login_box p{
+    margin: 0;
+    padding:0;
+    font-weight:bold;
+}
+.Login_box h1{
+    text-align: center;
+}
+.Login_box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Login_box input[type="text"], input[type="password"],input[type="email"],input[type="tel"],input[type="number"]{
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:white;
+    font-size: 16px;
+}
+.Login_box input[type="submit"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background:#fb2525;
+    color:white;
+    font-size:18px;
+    border-radius:20px;
+}
+.Login_box input[type="submit"]:hover{
+    cursor:pointer;
+    background:#0a9581;
+    color:#ccc;
+}
+
+.Login_box a{
+    text-decoration: none;
+    font-size:16px;
+    line-height:20px;
+    color:darkgrey;
+}
+.Login_box a:hover{
+    color:#0a9581;
+}
+
+::placeholder{
+    color:#808080;
+
+

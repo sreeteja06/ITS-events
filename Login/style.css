@@ -1,0 +1,68 @@
+body{
+    background-color: #252830;
+    color: #777;
+    padding: 30px;
+}
+
+.Sign_up{
+    width: 320px;
+    height: 600px;
+    background: transparent;
+    background-color:rgba(0, 0,0,0.6);
+    color: white;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+.Sign_up p{
+    margin: 0;
+    padding:0;
+    font-weight:bold;
+}
+.Sign_up h1{
+    text-align: center;
+}
+.Sign_up input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Sign_up input[type="text"], input[type="password"],input[type="email"],input[type="tel"],input[type="number"]{
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:white;
+    font-size: 16px;
+}
+.Sign_up input[type="submit"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background:#fb2525;
+    color:white;
+    font-size:18px;
+    border-radius:20px;
+}
+.Sign_up input[type="submit"]:hover{
+    cursor:pointer;
+    background:#0a9581;
+    color:#ccc;
+}
+
+.Sign_up a{
+    text-decoration: none;
+    font-size:16px;
+    line-height:20px;
+    color:darkgrey;
+}
+.Sign_up a:hover{
+    color:#0a9581;
+}
+
+::placeholder{
+    color:#808080;
+}

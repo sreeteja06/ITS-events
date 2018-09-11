@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
+    <script type="text/javascript">
+        function addClass() {
+      let closed = document.getElementsByClassName("nav-is-visible");
+      if (closed.length <= 0) {
+        console.log("if");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.add("nav-is-visible");
+        closed = false;
+      }
+      else {
+        console.log("else");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.remove("nav-is-visible");
+        closed = !closed;
+      }
+    }
+    </script>
+</head>
+<body>
+   <nav class="cd-stretchy-nav">
+    <a class="cd-nav-trigger" onclick="addClass()">
+      <span aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="../index.html" ><span>Home</span></a></li>
+      <li><a href="../calendar/calendar.html"><span>Calendar</span></a></li>
+      <li><a onclick="/Event/events_list.html"><span>Events</span></a></li>
+      <li><a onclick="scrollToEvents()"><span>Workshops</span></a></li>
+      <li><a href="../contact/contact.html"><span>Contact</span></a></li>
+      <li><a href="Login/login.html" class="active"><span>Login</span></a></li>
+    </ul>
+    <span aria-hidden="true" class="stretchy-nav-bg"></span>
+  </nav>
+    <div class="Login_box">
+        <script type="text/javascript">
+            function validate() {
+                var username = document.getElementById("user").value;
+                var password = document.getElementById("pass").value;
+                if (username=="admin" && password=="password"){ 
+                    alert("OK");
+                    change();
+                }else {
+                    alert("Invalid credentails");
+                }
+            }
+            function change(){
+               window.location.replace("index.html");
+           }
+        </script>
+        <h1 style="text-align: center;">LOGIN</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" placeholder="Enter Username" name="username" id="user" required>
+            <p>Password</p>
+            <input type="password" placeholder="Enter Password" name="password" id="pass" required>
+            <input type="submit" value="Login in" onclick="validate()">
+            <a href="#">Forgot Password?</a><br/>
+            <a href="signup.html">Don't have an account</a>
+        </form>
+    </div>
+</body>
+</html>

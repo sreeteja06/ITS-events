@@ -31,6 +31,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: lefttoright 1s ease-in;
 }
 
 @keyframes bottomtotop{
@@ -47,6 +48,19 @@ body{
     }
 }
 
+@keyframes lefttoright{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 .left_box{
     width:40%;
     height:100%;
@@ -107,7 +121,7 @@ body{
     height:210px;
     top:15px;
     animation: bottomtotop 1s ease-out;
-    margin:5px;
+    margin:10px;
 }
 
 .events_box ul li .event_date{
@@ -169,9 +183,9 @@ body{
     font-family:serif;
 }
 
-.events_box ul li .event_details button{
+/*.events_box ul li .event_details button{
     display: inline-block;
-  /*  border: 2px solid #262626;*/
+    border: 2px solid #262626;
     padding: 10px 10px;
     margin: 5px;
     background: transparent;
@@ -179,17 +193,17 @@ body{
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-}
+}*/
 .organizer{
     float:right;
     font-weight: bold;
     text-transform: uppercase;
 }
-.events_box ul li .event_details button:hover {
+/*.events_box ul li .event_details button:hover {
     color:#fff;
     background: #0a9581;
     border-radius:100px;
-}
+}*/
 
 
 .modal_background{
@@ -221,4 +235,29 @@ body{
     color:#000;
     text-decoration: none;
     cursor: pointer;   
+}
+
+.details_btn{
+    display:inline-block;
+    background-color:rgba(0,0,0,0.8);
+    color:rgba(225,225,225,1);
+   /*padding:5px;
+    margin:2px;*/
+    text-decoration: none;
+    padding: 8px 10px;
+    margin: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.details_btn:hover{
+    background-color:#0a9581;
+}
+
+.block:hover{
+    box-shadow: 5px 10px 8px rgba(0,0,0,1);
+    width:100%;
+    height:220px;
+    margin:6px;
+    cursor:pointer;
 }

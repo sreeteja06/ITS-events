@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function addClass() {
+      let closed = document.getElementsByClassName("nav-is-visible");
+      if (closed.length <= 0) {
+        console.log("if");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.add("nav-is-visible");
+        closed = false;
+      }
+      else {
+        console.log("else");
+        let classn = document.getElementsByClassName("cd-stretchy-nav");
+        classn[0].classList.remove("nav-is-visible");
+        closed = !closed;
+      }
+    }
+    </script>
+</head>
+<body>
+   <nav class="cd-stretchy-nav">
+    <a class="cd-nav-trigger" onclick="addClass()">
+      <span aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="../index.html" ><span>Home</span></a></li>
+      <li><a href="../calendar/calendar.html"><span>Calendar</span></a></li>
+      <li><a onclick="scrollToEvents()"><span>Events</span></a></li>
+      <li><a onclick="scrollToEvents()"><span>Workshops</span></a></li>
+      <li><a href="../contact/contact.html"><span>Contact</span></a></li>
+      <li><a href="../Login/login.html" class="active"><span>Login</span></a></li>
+    </ul>
+    <span aria-hidden="true" class="stretchy-nav-bg"></span>
+  </nav>
+    <div class="Sign_up">
+        <h1>SIGN UP</h1>
+        <script type="text/javascript">
+            function validate() {
+                var username = document.getElementById("user").value;
+                var password = document.getElementById("pass").value;
+                var password1 = document.getElementById("pass1").value;
+                var email = document.getElementById("mail").value;
+                var phone = document.getElementById("phone").value;
+                if (username.length==0||password.length==0||mail.length==0||phone.length==0){ 
+                    alert("Fill all feilds");
+                }else if(password!=password1){
+                    alert("Passwords don't match");   
+                }else if(phone.length!=10){
+                    alert("Invalid number");
+                }else {
+                    alert("Registration successfull");
+                    change();
+                }
+                function change(){
+               window.location.replace("login.html");
+           }
+            }
+        </script>
+        <form style="text-align: center;" >
+            <p>Username</p>
+            <input type="text" placeholder="Enter Username" name="username" id="user" required>
+            <p>Password</p>
+            <input type="password" placeholder="Enter Password" name="password" id="pass" required>
+            <p>Confirm Password</p>
+            <input type="password" placeholder="Re-type Password" name="password" id="pass1" required>
+            <p>Email</p>
+            <input type="email" placeholder="Enter E-Mail" name="email" id="mail" required>
+            <p>Phone No</p>
+            <input type="tel" placeholder="Enter Phone Number" name="phone" id="phone" required><br/>
+            <input type="submit" value="Sign Up" name="register" onclick="validate()">
+        </form>
+    </div>
+</body>
+</html>
