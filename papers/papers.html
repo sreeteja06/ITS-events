@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="papers.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
+    <script>
+        window.onscroll = () => {
+                if (!(closed.length <= 0)) {
+                    console.log("else");
+                    let classn = document.getElementsByClassName("cd-stretchy-nav");
+                    classn[0].classList.remove("nav-is-visible");
+                    closed = !closed;
+                }
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    document.getElementById("scrollAnim").style.visibility = "hidden";
+                } else {
+                    document.getElementById("scrollAnim").style.visibility = "visible";
+                }
+            };
+            function addClass() {
+                let closed = document.getElementsByClassName("nav-is-visible");
+                if (closed.length <= 0) {
+                    console.log("if");
+                    let classn = document.getElementsByClassName("cd-stretchy-nav");
+                    classn[0].classList.add("nav-is-visible");
+                    closed = false;
+                }
+                else {
+                    console.log("else");
+                    let classn = document.getElementsByClassName("cd-stretchy-nav");
+                    classn[0].classList.remove("nav-is-visible");
+                    closed = !closed;
+                }
+            }
+    </script>
+</head>
+<body>
+    <nav class="cd-stretchy-nav">
+        <a class="cd-nav-trigger" onclick="addClass()">
+            <span aria-hidden="true"></span>
+        </a>
+        <ul>
+            <li><a href="../index.html"></a></li>
+            <li><a href="papers.html" class="active"></a></li>
+            <li><a href="../Events/events_list.html"></a></a></li>
+            <li><a href="../Events/events_list.html"></a></li>
+            <li><a href="../Login/login.html"></a></li>
+        </ul>
+        <span aria-hidden="true" class="stretchy-nav-bg"></span>
+    </nav>
+    <!-- flying plane -->
+    <div class="frame">
+        <div class="plane-container">
+            <a target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+                    xml:space="preserve" class="plane">
+                    <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  " />
+                    <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   " />
+                </svg></a>
+    
+        </div>
+    </div>
+    <div class="frame">
+        <div class="plane-container-x">
+            <a target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+                    xml:space="preserve" class="plane">
+                    <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  " />
+                    <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   " />
+                </svg></a>
+    
+        </div>
+    </div>
+    <!-- flying planes ends here -->
+</body>
+</html>
