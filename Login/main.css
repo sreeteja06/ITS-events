@@ -63,7 +63,17 @@ body{
     color:#0a9581;
 }
 
+.its_logo {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 200px;
+}
+
 ::placeholder{
     color:#808080;
+
+
 
 
