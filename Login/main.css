@@ -67,6 +67,26 @@ body{
     color:#0a9581;
 }
 
+.its_logo {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 200px;
+}
+
 ::placeholder{
     color:#808080;
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+
+/*=======
 }
+>>>>>>> 6d1a1a87a5d3aa6e2af8e16d5a330bf32f208a7e
+=======
+}
+>>>>>>> 6d1a1a87a5d3aa6e2af8e16d5a330bf32f208a7e
+*/
