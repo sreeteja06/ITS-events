@@ -62,7 +62,7 @@ echo "<script type='text/javascript'>alert('Your mail has been sent successfuly 
         <li><a href="../calendar/calendar.html"><span></span></a></li>
         <li><a href="../index.html"><span></span></a></li>
         <li><a onclick="scrollToEvents()"><span></span></a></li>
-        <li><a href="contact.html" class="active"><span></span></a></li>
+        <li><a href="Login/login.html"><span></span></a></li>
         </ul>
         <span aria-hidden="true" class="stretchy-nav-bg"></span>
     </nav>
