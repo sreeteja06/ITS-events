@@ -30,12 +30,11 @@
       <span aria-hidden="true"></span>
     </a>
     <ul>
-      <li><a href="../index.html" ><span>Home</span></a></li>
-      <li><a href="../calendar/calendar.html"><span>Calendar</span></a></li>
-      <li><a onclick="scrollToEvents()"><span>Events</span></a></li>
-      <li><a onclick="scrollToEvents()"><span>Workshops</span></a></li>
-      <li><a href="../contact/contact.html"><span>Contact</span></a></li>
-      <li><a href="../Login/login.html" class="active"><span>Login</span></a></li>
+      <li><a href="../index.html" style="text-decoration:none"><span>Home</span></a></li>
+      <li><a href="../calendar/calendar.html" style="text-decoration:none"><span>Calendar</span></a></li>
+      <li><a onclick="scrollToEvents()" style="text-decoration:none"><span>Events</span></a></li>
+      <li><a onclick="scrollToEvents()" style="text-decoration:none"><span>Workshops</span></a></li>
+      <li><a href="../Login/login.html" class="active" style="text-decoration:none"><span>Login</span></a></li>
     </ul>
     <span aria-hidden="true" class="stretchy-nav-bg"></span>
   </nav>
@@ -64,15 +63,10 @@
             }
         </script>
         <form style="text-align: center;" >
-            <p>Username</p>
             <input type="text" placeholder="Enter Username" name="username" id="user" required>
-            <p>Password</p>
             <input type="password" placeholder="Enter Password" name="password" id="pass" required>
-            <p>Confirm Password</p>
             <input type="password" placeholder="Re-type Password" name="password" id="pass1" required>
-            <p>Email</p>
             <input type="email" placeholder="Enter E-Mail" name="email" id="mail" required>
-            <p>Phone No</p>
             <input type="tel" placeholder="Enter Phone Number" name="phone" id="phone" required><br/>
             <input type="submit" value="Sign Up" name="register" onclick="validate()">
         </form>

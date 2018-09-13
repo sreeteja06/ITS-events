@@ -20,7 +20,7 @@ body{
 .Sign_up p{
     margin: 0;
     padding:0;
-    font-weight:bold;
+    font-weight:bold; 
 }
 .Sign_up h1{
     text-align: center;

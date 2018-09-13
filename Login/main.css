@@ -43,6 +43,8 @@ body{
     outline:none;
     height:40px;
     background:#fb2525;
+    transition: all;
+    transition-duration: 0.8s;
     color:white;
     font-size:18px;
     border-radius:20px;
@@ -58,6 +60,8 @@ body{
     font-size:16px;
     line-height:20px;
     color:darkgrey;
+    transition: all;
+    transition-duration: 0.5s;
 }
 .Login_box a:hover{
     color:#0a9581;
@@ -65,5 +69,4 @@ body{
 
 ::placeholder{
     color:#808080;
-
-
+}
