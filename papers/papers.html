@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="swiper/swiper.css">
     <link rel="stylesheet" type="text/css" media="screen" href="papers.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
     <script>
@@ -52,7 +53,7 @@
         </ul>
         <span aria-hidden="true" class="stretchy-nav-bg"></span>
     </nav>
-    <!-- flying plane -->
+    <!-- flying plane -->   
     <div class="frame">
         <div class="plane-container">
             <a target="_blank">
@@ -78,5 +79,43 @@
         </div>
     </div>
     <!-- flying planes ends here -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="swiper/swiper.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
 </body>
 </html>
