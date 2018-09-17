@@ -8,6 +8,23 @@ body {
   overflow: hidden;
 }
 
+/* styling swiper */
+
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background-color: azure;
+      width: 75vw;
+      height: 80vh;
+    }
+
+  /* styling swiper ending */
+
 /* styling planes */
 
 * {
@@ -36,6 +53,7 @@ svg {
   width: 200px;
   margin: 0px auto;
   z-index: 3;
+  transform: translate(-200px,-600px);
 }
  /*Paper Plane: Image*/
 .plane {
@@ -45,19 +63,18 @@ svg {
 
 /*Paper Plane: Animation*/
 .plane-container {
-  -webkit-animation: paper-plane-scoping-y 3s forwards infinite;
-  -moz-animation: paper-plane-scoping-y 3s forwards infinite;
-  animation: paper-plane-scoping-y 3s forwards infinite;
-
+  -webkit-animation: paper-plane-scoping-y 3s 1s forwards infinite;
+  -moz-animation: paper-plane-scoping-y 3s 1s forwards infinite;
+  animation: paper-plane-scoping-y 3s 1s forwards infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
 .plane-container-x {
-  -webkit-animation: paper-plane-scoping-x 4s forwards infinite;
-  -moz-animation: paper-plane-scoping-x 4s forwards infinite;
-  animation: paper-plane-scoping-x 4s forwards infinite;
+  -webkit-animation: paper-plane-scoping-x 6s forwards infinite;
+  -moz-animation: paper-plane-scoping-x 6s forwards infinite;
+  animation: paper-plane-scoping-x 6s forwards infinite;
 
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
@@ -86,7 +103,7 @@ svg {
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-
+  perspective: 800px;
   -webkit-animation: paper-plane-soaring 4s forwards infinite;
   -moz-animation: paper-plane-soaring 4s forwards infinite;
   animation: paper-plane-soaring 4s forwards infinite;
@@ -95,31 +112,37 @@ svg {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
+    transition-duration: 1s;
     transform: rotate(0deg);
   }
   40% {
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
+    transition-duration: 1s;
     transform: rotate(15deg);
   }
   50% {
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
+    transition-duration: 1s;
     transform: rotate(15deg);
   }
   60% {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
+    transition-duration: 1s;
     transform: rotate(-10deg);
   }
   70% {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
+    transition-duration: 1s;
     transform: rotate(-10deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
+    transition-duration: 1s;
     transform: rotate(0deg);
   }
 }

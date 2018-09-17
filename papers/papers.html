@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="swiper/swiper.css">
     <link rel="stylesheet" type="text/css" media="screen" href="papers.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../nav.css" />
     <script>
@@ -52,7 +53,7 @@
         </ul>
         <span aria-hidden="true" class="stretchy-nav-bg"></span>
     </nav>
-    <!-- flying plane -->
+    <!-- flying plane -->   
     <div class="frame">
         <div class="plane-container">
             <a target="_blank">
@@ -78,5 +79,48 @@
         </div>
     </div>
     <!-- flying planes ends here -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" >
+                <div class="paper-title">Machine Grows</div>
+                <div class="paper-Content">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</div>
+                <div class="paper-Author">M. Sree Teja</div>
+                <a href="https://github.com/sreeteja06"><div class="Download-Paper">Download</div></a>
+            </div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+            <div class="swiper-slide" ></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="swiper/swiper.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
 </body>
 </html>
